@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: `/epass`,
     siteMetadata: {
         title: `EPass`,
         description: `EPass`,
