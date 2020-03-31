@@ -2,7 +2,7 @@
   "name": "epass",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Vishwajeet Kushmariya <k.vish.7777@gmail.com>",
   "dependencies": {
     "@mdi/font": "^5.0.45",
