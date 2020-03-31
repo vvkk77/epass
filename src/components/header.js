@@ -12,9 +12,9 @@ const Header = ({ siteTitle }) => (
             aria-label="main navigation"
         >
             <div className="navbar-brand">
-                <a className="navbar-item" href="/">
+                <Link className="navbar-item" to="/">
                     <img src={Logo} alt="EPass Logo" />
-                </a>
+                </Link>
             </div>
 
             <div className="navbar-menu-items">
