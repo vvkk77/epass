@@ -1,18 +1,25 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "epass",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Vishwajeet Kushmariya <k.vish.7777@gmail.com>",
   "dependencies": {
+    "@mdi/font": "^5.0.45",
+    "bulma": "^0.8.1",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
+    "gatsby-plugin-postcss": "^2.2.1",
+    "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
+    "node-sass": "^4.13.1",
+    "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -27,18 +34,21 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "release:major": "npm version major -m '📦 [RELEASE:MAJOR] v%s' && git push && git push --tags",
+    "release:minor": "npm version minor -m '📦 [RELEASE:MINOR] v%s' && git push && git push --tags",
+    "release:patch": "npm version patch -m '📦 [RELEASE:PATCH] v%s' && git push && git push --tags",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/vvkk77/epass"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/vvkk77/epass/issues"
   }
 }

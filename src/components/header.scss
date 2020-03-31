@@ -1,0 +1,256 @@
+@import '../scss/variables.scss';
+
+.columns {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.epass-nav {
+    padding: 1rem 0;
+    justify-content: space-between;
+
+    img {
+        width: 112px;
+    }
+
+    .page-link {
+        padding: 0.5rem 1rem;
+        color: #222222;
+        margin-left: 1rem;
+        border-bottom: 1px solid transparent;
+    }
+
+    .active-page-link {
+        border-bottom: 1px solid $primary;
+    }
+
+    .navbar-menu-items {
+        display: flex;
+        align-items: center;
+    }
+
+    @include mobile {
+        padding: 1rem;
+        img {
+            width: 60px;
+        }
+    }
+}
+
+@include touch {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+.page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .is-visible-mobile {
+        display: none !important;
+    }
+
+    .section-image {
+        position: relative;
+
+        .dashboard-image {
+            width: 100%;
+            max-width: 380px;
+        }
+        .phone-image {
+            position: absolute;
+            width: 115px;
+            left: -16px;
+            bottom: -16px;
+
+            &.right {
+                right: -16px;
+                left: unset;
+            }
+        }
+    }
+
+    .bullet-point {
+        width: 48px;
+        height: 48px;
+        color: #00a4ff;
+        font-weight: 800;
+        font-size: 24px;
+        background: #e0f3ff;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 12px;
+        line-height: 1;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .points-list {
+        display: inline-block;
+        text-align: left;
+        .point {
+            margin-bottom: 16px;
+            .icon {
+                margin-right: 1rem;
+            }
+
+            .subtitle {
+            }
+        }
+    }
+
+    @include mobile {
+        text-align: center;
+
+        .is-visible-mobile {
+            display: inline-block !important;
+        }
+
+        .points-container {
+            margin-top: 32px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &:nth-child(2n + 1) {
+            .columns {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .section-image {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: inline-block;
+
+            .phone-image {
+                width: 64px;
+                left: 16px;
+
+                &.right {
+                    right: 16px;
+                    left: unset;
+                }
+            }
+        }
+    }
+}
+
+.checkout-container {
+    text-align: center;
+    padding: 40px;
+    background: #f5f5f5;
+    button {
+        margin-bottom: 1rem;
+    }
+}
+
+.homepage-container {
+    margin-bottom: 2rem;
+}
+
+@include mobile {
+    .homepage-container {
+        margin-top: -2rem;
+    }
+}
+
+.github-btn.button.is-primary.is-outlined {
+    background-color: white;
+}
+
+.hero-container {
+    .subtitle {
+        line-height: 1.8;
+        max-width: 560px;
+    }
+
+    .github-btn {
+        margin-bottom: 180px;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        max-width: 600px;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    button {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    @include mobile {
+        text-align: center;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.pt-5rem {
+    padding-top: 5rem;
+}
+
+.team-container {
+    text-align: center;
+
+    .team-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .profile {
+            display: inline-flex;
+            padding: 1rem;
+            .box {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                .profile-image {
+                    width: 56px;
+                    margin-bottom: 1rem;
+                }
+
+                width: 200px;
+                box-shadow: 0px 2px 20px rgba(181, 181, 181, 0.2);
+                transition: all 0.3s ease;
+                border-radius: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0px 10px 30px rgba(181, 181, 181, 0.4);
+                    transform: translateY(-1rem);
+                }
+
+                .title {
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .subtitle {
+                    margin-top: unset;
+                    margin-bottom: 1rem;
+                    font-size: 0.75rem;
+                }
+
+                .linkenIn-icon {
+                    img {
+                    }
+                }
+            }
+        }
+    }
+}
