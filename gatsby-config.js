@@ -21,7 +21,7 @@ module.exports = {
             options: {
                 name: `epass`,
                 short_name: `starter`,
-                start_url: `/`,
+                start_url: `/epass`,
                 background_color: `#00a4ff`,
                 theme_color: `#00a4ff`,
                 display: `minimal-ui`,
